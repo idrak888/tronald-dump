@@ -26,14 +26,14 @@ class SearchResults extends Component {
     search = e => {
         e.preventDefault();
         const searchBar = document.querySelector('input');
-        axios.get('https://api.tronalddump.io/search/quote?query=' + searchBar.value, {
+        axios.get('https://cors-anywhere.herokuapp.com/https://api.tronalddump.io/search/quote?query=' + searchBar.value, {
             params: {
                 query: searchBar.value,
                 page: 1,
                 size: 10
             },
             headers: {
-                Accept: 'application/hal+json',
+                Accept: 'application/hal+json'
             }
         })
         .then(doc => {
@@ -47,6 +47,7 @@ class SearchResults extends Component {
             <div className="SearchResults">
                 <Head>
                     <title>Tronald Dump</title>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
                     <link href="/static/style.css" rel="stylesheet" />
                     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
                 </Head>
@@ -56,7 +57,7 @@ class SearchResults extends Component {
                 <br/>
                 <br/>
                 <form onSubmit={this.search}>
-                    <input type="text" placeholder="Search the dump"/>
+                    <input type="search" placeholder="Search the dump"/>
                 </form>
                 <br/>
                 <span className="err">No results found :(</span>

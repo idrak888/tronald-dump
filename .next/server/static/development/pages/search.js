@@ -526,7 +526,7 @@ function (_Component) {
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "search", function (e) {
       e.preventDefault();
       var searchBar = document.querySelector('input');
-      axios__WEBPACK_IMPORTED_MODULE_11___default.a.get('https://api.tronalddump.io/search/quote?query=' + searchBar.value, {
+      axios__WEBPACK_IMPORTED_MODULE_11___default.a.get('https://cors-anywhere.herokuapp.com/https://api.tronalddump.io/search/quote?query=' + searchBar.value, {
         params: {
           query: searchBar.value,
           page: 1,
@@ -586,78 +586,86 @@ function (_Component) {
           lineNumber: 49
         },
         __self: this
-      }, "Tronald Dump"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
-        href: "/static/style.css",
-        rel: "stylesheet",
+      }, "Tronald Dump"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 50
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
-        href: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css",
+        href: "/static/style.css",
+        rel: "stylesheet",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 51
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
+        href: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 52
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
         src: "https://docs.tronalddump.io/images/logo.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 54
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 55
         },
         __self: this
       }, "Tronald Dump"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("strong", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 56
         },
         __self: this
       }, "Dumb things said my Donald Trump"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 57
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 58
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("form", {
         onSubmit: this.search,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 59
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
-        type: "text",
+        type: "search",
         placeholder: "Search the dump",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 60
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 62
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         className: "err",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 63
         },
         __self: this
       }, "No results found :("), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_Search__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -665,7 +673,7 @@ function (_Component) {
         searchKey: this.state.searchKey,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 64
         },
         __self: this
       }));

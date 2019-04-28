@@ -12521,7 +12521,7 @@ function (_Component) {
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "search", function (e) {
       e.preventDefault();
       var searchBar = document.querySelector('input');
-      axios__WEBPACK_IMPORTED_MODULE_11___default.a.get('https://api.tronalddump.io/search/quote?query=' + searchBar.value, {
+      axios__WEBPACK_IMPORTED_MODULE_11___default.a.get('https://cors-anywhere.herokuapp.com/https://api.tronalddump.io/search/quote?query=' + searchBar.value, {
         params: {
           query: searchBar.value,
           page: 1,
@@ -12545,7 +12545,7 @@ function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      axios__WEBPACK_IMPORTED_MODULE_11___default.a.get('https://api.tronalddump.io/random/quote').then(function (doc) {
+      axios__WEBPACK_IMPORTED_MODULE_11___default.a.get('https://cors-anywhere.herokuapp.com/https://api.tronalddump.io/random/quote').then(function (doc) {
         console.log(doc.data);
 
         _this2.setState({
@@ -12575,89 +12575,97 @@ function (_Component) {
           lineNumber: 41
         },
         __self: this
-      }, "Tronald Dump"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
-        href: "/static/style.css",
-        rel: "stylesheet",
+      }, "Tronald Dump"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 42
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
-        href: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css",
+        href: "/static/style.css",
+        rel: "stylesheet",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 43
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
+        href: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
         src: "https://docs.tronalddump.io/images/logo.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 46
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 47
         },
         __self: this
       }, "Tronald Dump"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("strong", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 48
         },
         __self: this
       }, "Dumb things said my Donald Trump"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 49
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 50
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 51
         },
         __self: this
       }, "Random qoute of the day:"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 52
         },
         __self: this
       }, "\"", this.state.random, "\""), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("form", {
         onSubmit: this.search,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 53
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
-        type: "text",
+        type: "search",
         placeholder: "Search the dump",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 54
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 56
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 57
         },
         __self: this
       }));
