@@ -1,0 +1,25 @@
+img {
+    width: 180px;
+}
+.IndexPage, .SearchResults {
+    padding: 10px 30px;
+    display: block;
+    margin: auto;
+    width: 400px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.IndexPage p, .SearchResults p {
+    text-align: left;
+}
+.IndexPage input, .SearchResults input {
+    padding: 7px 8px;
+    width: 100%;
+    font-size: 14px;
+}
+@media only screen and (max-width: 500px) {
+    .IndexPage, .SearchResults {
+        padding: 10px 20px;
+        width: 90%;
+    }
+}
